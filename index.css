@@ -1,0 +1,182 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mainHeading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.MainText {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: start;
+  margin-bottom: 1rem;
+}
+
+.AddTaskButton {
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  margin-right: 1.5rem;
+  padding: 1rem 1rem;
+  border-radius: 15rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.AddTaskButton:hover {
+  background-color: blue;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.listContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  /* margin-left: 10rem; */
+}
+
+.listContainer li {
+  background-color: #292e4d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+  color: #fff;
+  padding: 0.5rem;
+  padding-top: 1rem;
+  list-style: none;
+}
+
+.listContainer li a {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: baseline;
+}
+
+.listContainer li p {
+  font-size: 1.7rem;
+  margin-top: 2px;
+}
+
+.to-do {
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: baseline;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.backgroundContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TaskCard__form {
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: #292e4d;
+  color: #fff;
+  position: fixed;
+  top: 37%;
+  left: 35%;
+  border-radius: 10px;
+  box-shadow: 0 10px 24px rgba(231, 22, 22, 0.1);
+}
+
+.TaskCard__form label {
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+.TaskCard__form input {
+  padding: 0.5rem;
+  margin-top: 2rem;
+}
+
+.TaskCard__form button {
+  padding: 0.5rem;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  border: none;
+  /* margin-left: 23rem; */
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.TaskCard__form button:hover {
+  background-color: blue;
+  color: #fff;
+  transition: 0.5s;
+  /* transform: scale(1.1, 1.1); */
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Status_buttons_container {
+  display: flex;
+  gap: 4.5rem;
+  /* margin-left: 25rem; */
+}
+
+.Status_buttons {
+  background-color: #404b92;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-right: 2rem;
+}
+
+.Status_buttons:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.Status_buttons_is_active {
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+
+  padding: 1rem;
+  margin-right: 2rem;
+}
+
+.Status_buttons_is_active:before {
+  content: "\2713  ";
+}
+
+.Status_buttons_delete {
+  background-color: #404b92;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  padding: 1rem;
+}
